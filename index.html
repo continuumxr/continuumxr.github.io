@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://continuumxr.org">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
@@ -25,6 +25,7 @@
       --accent-light: #e8f1fb;
       --accent-hover: #3a7bc8;
       --gray-50: #f9fafb;
+      --font-heading: 'Outfit', 'Cabin', -apple-system, sans-serif;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -66,6 +67,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #374151;
+      font-family: var(--font-heading);
     }
 
     .wordmark span { color: var(--accent); }
@@ -95,11 +97,12 @@
 
     .hero h1 {
       font-size: clamp(2.2rem, 5vw, 3.2rem);
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.25;
       letter-spacing: -0.02em;
       color: var(--text-primary);
       margin-bottom: 1.5rem;
+      font-family: var(--font-heading);
     }
 
     .hero h1 em { font-style: normal; color: var(--accent); }
@@ -181,6 +184,7 @@
       font-weight: 600;
       margin-bottom: 0.5rem;
       color: var(--text-primary);
+      font-family: var(--font-heading);
     }
 
     .principle p {
@@ -208,6 +212,7 @@
       font-weight: 600;
       margin-bottom: 0.75rem;
       color: var(--text-primary);
+      font-family: var(--font-heading);
     }
 
     .callout-box p {
